@@ -61,6 +61,10 @@ Route::get('/surat-jalan/{selling}', [SuratJalanController::class, 'print'])
 Route::get('/kwitansi/{selling}', [KwitansiController::class, 'print'])
     ->name('kwitansi.print');
 
+Route::get('/kwitansi/{selling}/download', [KwitansiController::class, 'download'])
+    ->name('kwitansi.download');
+
+
 /**
  * ✅ PRINT NOMOR INVOICE (BARU)
  */
